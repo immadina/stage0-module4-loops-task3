@@ -5,14 +5,15 @@ public class FibonacciSeries {
         // 0 1 1 2 3 5 8 13 ...
         int prev = 0;
         int next = 1;
-        //int toPrint = 0;
+        int toPrint = next;
         System.out.println(0);
         for (int i = 1; i < lastFibonacci; i++) {
 
-            System.out.println(next);
-            next = next + prev;
-
+            System.out.println(toPrint); //0 1
+            next = toPrint;
+            toPrint = prev + next;
             prev = next;
+
 
 
         }
